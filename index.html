@@ -39,19 +39,19 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-var a_canvas = document.getElementById("a"); 	                                //Added code to id canvas (get element) 
+var a_canvas = document.getElementById("canvas"); 	                                //Added code to id canvas (get element) 
 		function draw_b() {
-  			var b_canvas = document.getElementById("a");            //Added code to draw rectangle in canvas
+  			var b_canvas = document.getElementById("canvas");            //Added code to draw rectangle in canvas
   			var b_context = b_canvas.getContext("2d");
  			b_context.fillRect(50, 25, 160, 120);
 				  }
 		function clearRecta() {
-			var b_canvas = document.getElementById("a");           //added code to clear canvas 
+			var b_canvas = document.getElementById("canvas");           //added code to clear canvas 
 			var b_context = b_canvas.getContext("2d");
 			b_canvas.width = b_canvas.width;
 				      }	
 		function write() {
-			var b_canvas = document.getElementById("a");           //added code to add my name to the canvas
+			var b_canvas = document.getElementById("canvas");           //added code to add my name to the canvas
 			var b_context = b_canvas.getContext("2d");
 			b_context.fillStyle = "black";
       			b_context.font = "30px Arial";
@@ -80,6 +80,11 @@ var a_canvas = document.getElementById("a"); 	                                //
     left: 0vw;
     z-index: 1;
 }
+	
+ #canvas {
+        width: 300;
+        height: 225;
+	 }
 </style>
 
 <body>
@@ -88,7 +93,7 @@ var a_canvas = document.getElementById("a"); 	                                //
 </div>
 	
 <div id="content" class="w3-container">
-	<p><canvas id="a" width="300" height="225" style="border: 1px solid black;"></canvas></p>
+	<p><canvas id="canvas" style="border: 1px solid black;"></canvas></p>
 	<!-- /Added code for canvas with border -->
 	
 	<button onclick = "draw_b()" > Draw Rectangle </button>                             
