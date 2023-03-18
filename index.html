@@ -50,6 +50,14 @@ var a_canvas = document.getElementById("a"); 	                                //
 			var b_context = b_canvas.getContext("2d");
 			b_canvas.width = b_canvas.width;
 				      }	
+		function myName() {
+			var canvas = document.getElementById("a");      //added code to write my name in the canvas
+			var ctx = canvas.getContext("2d");
+			ctx.font = "30px Arial";
+			ctx.fillStyle = "pink";
+			ctx.textAlign = "center";
+			ctx.fillText("Jessica Moran", canvas.width/2, canvas.height/3);
+				  }
 
 </script>
 
@@ -86,6 +94,9 @@ var a_canvas = document.getElementById("a"); 	                                //
 	
 	<button onclick = "draw_b()" > Draw Rectangle </button>                             
 	<!-- /Added button to trigger draw function -->
+	
+	<button onclick = "myName" > Draw Rectangle </button>                             
+	<!-- /Added button to trigger myName function -->
 	
 	<button onclick = "clearRecta()" > Clear Canvas </button>                             
 	<!-- /Added button to trigger clear function -->
