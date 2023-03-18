@@ -45,9 +45,9 @@ var a_canvas = document.getElementById("a"); 	                                //
   			var b_context = b_canvas.getContext("2d");
  			b_context.fillRect(50, 25, 160, 120);
 				  }
-		function clear() {
+		function clearRecta() {
 			var b_canvas = document.getElementById("a");           //added code to clear canvas 
-			const context = canvas.getContext('2d');
+			var b_context = b_canvas.getContext("2d");
 			context.clearRect(0, 0, canvas.width, canvas.height);
 
 </script>
@@ -86,7 +86,7 @@ var a_canvas = document.getElementById("a"); 	                                //
 	<button onclick = "draw_b()" > Draw Rectangle </button>                             
 	<!-- /Added button to trigger draw function -->
 	
-	<button onclick = "clear()" > Clear Canvas </button>                             
+	<button onclick = "clearRecta()" > Clear Canvas </button>                             
 	<!-- /Added button to trigger clear function -->
 	
 	
