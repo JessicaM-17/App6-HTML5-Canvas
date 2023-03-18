@@ -20,7 +20,6 @@ Brief Description of Goal of Code:
 This code will allow us to play with a canvas. In this canvas I will be able to draw a rectangle, my name, and load an image with just a click!
  
 Known Issues:
-
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -39,19 +38,19 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-var a_canvas = document.getElementById("canvas"); 	                                //Added code to id canvas (get element) 
+var a_canvas = document.getElementById("a"); 	                                //Added code to id canvas (get element) 
 		function draw_b() {
-  			var b_canvas = document.getElementById("canvas");            //Added code to draw rectangle in canvas
+  			var b_canvas = document.getElementById("a");            //Added code to draw rectangle in canvas
   			var b_context = b_canvas.getContext("2d");
  			b_context.fillRect(50, 25, 160, 120);
 				  }
 		function clearRecta() {
-			var b_canvas = document.getElementById("canvas");           //added code to clear canvas 
+			var b_canvas = document.getElementById("a");           //added code to clear canvas 
 			var b_context = b_canvas.getContext("2d");
 			b_canvas.width = b_canvas.width;
 				      }	
 		function write() {
-			var b_canvas = document.getElementById("canvas");           //added code to add my name to the canvas
+			var b_canvas = document.getElementById("a");           //added code to add my name to the canvas
 			var b_context = b_canvas.getContext("2d");
 			b_context.fillStyle = "pink";
       			b_context.font = "30px Arial";
@@ -80,11 +79,6 @@ var a_canvas = document.getElementById("canvas"); 	                             
     left: 0vw;
     z-index: 1;
 }
-	
- #canvas {
-        width: 300;
-        height: 225;
-	 }
 </style>
 
 <body>
@@ -93,7 +87,7 @@ var a_canvas = document.getElementById("canvas"); 	                             
 </div>
 	
 <div id="content" class="w3-container">
-	<p><canvas id="canvas" style="border: 1px solid black;"></canvas></p>
+	<p><canvas id="a" width="300" height="225" style="border: 1px solid black;"></canvas></p>
 	<!-- /Added code for canvas with border -->
 	
 	<button onclick = "draw_b()" > Draw Rectangle </button>                             
