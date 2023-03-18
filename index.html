@@ -47,7 +47,8 @@ var a_canvas = document.getElementById("a"); 	                                //
 				  }
 		function clear() {
 			var b_canvas = document.getElementById("a");           //added code to clear canvas 
-			var b_canvas.width = b_canvas.width;
+			var b_context = b_canvas.getContext("2d");
+			b_canvas.width = b_canvas.width;
 				 }	
 	
 </script>
