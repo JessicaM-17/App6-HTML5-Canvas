@@ -47,13 +47,13 @@ var a_canvas = document.getElementById("a"); 	                                //
 		function clearRecta() {
 			var b_canvas = document.getElementById("a");           //added code to clear canvas 
 			var b_context = b_canvas.getContext("2d");
-			b_canvas.width = b_canvas.width;
+			b_canvas.width = b_canvas.width;                       //clears the canvas
 				      }	
 		function write() {
 			var b_canvas = document.getElementById("a");           //added code to add my name to the canvas
 			var b_context = b_canvas.getContext("2d");
-			b_context.font = "bold 12px sans-serif";
-			b_context.fillText("Jessica Moran", 248, 43);
+			b_context.font = "30px Arial";                         //font of the text+ size of letters
+			b_context.fillText("Jessica", 10, 50);                 //locationof text+ name
 		}
 </script>
 
