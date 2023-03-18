@@ -51,12 +51,12 @@ var a_canvas = document.getElementById("a"); 	                                //
 			b_canvas.width = b_canvas.width;
 				      }	
 		function myName() {
-			var b_canvas = document.getElementById("a");           //added code to write my name in the canvas
-			var b_context = b_canvas.getContext("2d");
-				b_ctx.font="30px Arial";
-				b_ctx.fillStyle = "pink";
-				b_ctx.textAlign = "center";
-				b_ctx.fillText("Jessica Moran", canvas.width/2, canvas.height/3);
+			var canvas = document.getElementById("a");           //added code to add my name to the canvas
+			var ctx=canvas.getContext("2d");
+			ctx.font="30px Arial";
+			ctx.fillStyle = "pink";
+			ctx.textAlign = "center";
+			ctx.fillText("Jessica Moran", canvas.width/2, canvas.height/3);
 				  }
 
 </script>
